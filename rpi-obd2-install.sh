@@ -23,7 +23,7 @@ fi
 
 # update, upgrade, and autoremove packages on system
 function UPGRADE {
-	apt-get  -y update && apt-get -y upgrade && apt-get -y autoremove	
+	apt-get  -y --allow-unauthenticated update && apt-get -y --allow-unauthenticated upgrade && apt-get -y  autoremove	
 	exit 1
 }
 
